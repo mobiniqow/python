@@ -10,11 +10,11 @@ class soapapi:
         return result
     def CheckSendCode(self,ReciptionNumber,Code):
         client = Client(self.basePath)
-        result = client.service.AutoSendCode(self.username,self.password,ReciptionNumber, Code)
+        result = client.service.CheckSendCode(self.username,self.password,ReciptionNumber, Code)
         return result
     def SendMessageWithCode(self,ReciptionNumber,Code):
         client = Client(self.basePath)
-        result = client.service.AutoSendCode(self.username,self.password,ReciptionNumber, Code)
+        result = client.service.SendMessageWithCode(self.username,self.password,ReciptionNumber, Code)
         return result
 
     
